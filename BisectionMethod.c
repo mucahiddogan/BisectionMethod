@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-//float equation(float x, float a, float b, float c, float d){
-//      return a*x*x*x + b*x*x + c*x + d;
-//}
 float a, b, c, d;
 
 int main(){
@@ -33,15 +30,6 @@ int main(){
       scanf ("%f", &tolerance);
       printf ("Tolerance = %f\n\n", tolerance);
 
-      //result = equation(a,b,c,d,x);
-      //float eq_lower = equation(lower,a,b,c,d);
-      //float eq_upper = equation(upper,a,b,c,d);
-      ////float eq_lower = pow(lower, 3)*a + pow(lower, 2)*b + lower*c + d;
-      ////float eq_upper = pow(upper, 3)*a + pow(upper, 2)*b + upper*c + d;
-      ////middle = (lower + upper) / 2;
-      //float eq_middle = equation(middle,a,b,c,d);
-      ////float eq_middle = pow(middle, 3)*a + pow(middle, 2)*b + middle*c + d;
-
       //General alghoritm framework
       int flag = 0;
       while (flag == 0){
@@ -53,11 +41,7 @@ int main(){
                   flag = 1;
                   break;
             }
-                  //float eq_middle = equation(middle,a,b,c,d);
-                  /* float eq_lower = equation(lower,a,b,c,d);
-                  float eq_upper = equation(upper,a,b,c,d);
-                  middle = (lower + upper) / 2;
-                  float eq_middle = equation(middle,a,b,c,d);*/
+
 
                   middle = (lower + upper) / 2;
                   float eq_middle = pow(middle, 3)*a + pow(middle, 2)*b + middle*c + d;
